@@ -1,5 +1,4 @@
-file = open('prueba1.csv', 'r')
-lines = file.readlines()
+import sys
 
 
 def process(line):
@@ -10,5 +9,5 @@ def process(line):
         print(info[1])
 
 
-for line in lines:
+for line in sys.stdin:
     process(line)
