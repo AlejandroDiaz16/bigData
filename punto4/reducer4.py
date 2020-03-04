@@ -1,5 +1,4 @@
-file = open('prueba4.csv', 'r')
-lines = file.readlines()
+import sys
 
 data = []
 
@@ -10,7 +9,7 @@ def reducer(line):
     data.sort()
 
 
-for line in lines:
+for line in sys.stdin:
     reducer(line)
 
 for dato in data:
