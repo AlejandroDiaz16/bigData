@@ -1,5 +1,4 @@
-file = open('prueba3.csv', 'r')
-lines = file.readlines()
+import sys
 
 data = dict()
 
@@ -14,7 +13,7 @@ def reducer(line):
         data[city[0]] = city[1]
 
 
-for line in lines:
+for line in sys.stdin:
     reducer(line)
 
 for datos in data:
